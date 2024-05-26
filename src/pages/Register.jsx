@@ -1,3 +1,8 @@
+import { Link } from "react-router-dom";
+import FacebookLogin from "../components/auth/FacebookLogin";
+import GithubLogin from "../components/auth/GithubLogin";
+import GoogleLogin from "../components/auth/GoogleLogin";
+
 const Register = () => {
     return (
         <div>
@@ -25,9 +30,17 @@ const Register = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
+          <button className="btn btn-primary">Register</button>
+        </div>
+        <div>
+          <p>Already Have an account ? <Link to={"/login"} className="text-orange-400">Login</Link> </p>
         </div>
       </form>
+      <div className="mx-7 mb-5 gap-3 text-white">
+        <GoogleLogin/>
+        <GithubLogin/>
+        <FacebookLogin/>
+      </div>
     </div>
   </div>
 </div>
