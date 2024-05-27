@@ -2,6 +2,9 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const EditRecipe = () => {
   const { id } = useParams();
 
@@ -42,9 +45,24 @@ const EditRecipe = () => {
       category,
       description,
     };
-
+    //toast-part starts
+    toast.success('Recipe Edited Successfully!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    //toast-part ends
     await axios.patch(`http://localhost:3000/recipes/${id}`, recipeData);
   };
+
+  //alert operation starts
+
+  //alert operation ends
+
   return (
     <div className="w-full px-16">
       <h1 className="text-4xl mb-4">Add Recipe</h1>
@@ -94,11 +112,13 @@ const EditRecipe = () => {
         <div className="mb-4">
           <input
             type="submit"
-            value={"Add Recipe"}
+            value={"Edit Recipe"}
             className="w-full btn py-3 px-5 border btn-neutral"
+            
           />
         </div>
       </form>
+      <ToastContainer />
     </div>
   );
 };

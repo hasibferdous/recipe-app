@@ -1,5 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-confirm-alert/src/react-confirm-alert.css';
+import confirmAction from "../../components/toast/confirmAction";
 
 const AddRecipe = () => {
   const [categories, setCategories] = useState();
@@ -36,6 +39,16 @@ const AddRecipe = () => {
 
     await axios.post("http://localhost:3000/recipes", recipeData);
   };
+  
+  //alert-toast part starts
+  const handleAdd = () => {
+    confirmAction('Are you sure you want to add this Recipe item?', () => {
+      toast.success("Recipe Item Added Successfully");
+    });
+  };
+  //alert-toast part ends
+
+
   return (
     <div className="w-full px-16">
       <h1 className="text-4xl mb-4">Add Recipe</h1>
@@ -77,9 +90,11 @@ const AddRecipe = () => {
             type="submit"
             value={"Add Recipe"}
             className="w-full btn py-3 px-5 border btn-neutral"
+            onClick={handleAdd}
           />
         </div>
       </form>
+      <ToastContainer />
     </div>
   );
 };
