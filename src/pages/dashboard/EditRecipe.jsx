@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import confirmAction from "../../components/toast/confirmAction";
 
 const EditRecipe = () => {
   const { id } = useParams();
@@ -45,27 +46,21 @@ const EditRecipe = () => {
       category,
       description,
     };
-    //toast-part starts
-    toast.success('Recipe Edited Successfully!', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-    //toast-part ends
+
     await axios.patch(`http://localhost:3000/recipes/${id}`, recipeData);
   };
 
-  //alert operation starts
-
-  //alert operation ends
+  //alert-toast part starts
+  const handleEdit = () => {
+    confirmAction('Are you sure you want to edit this Recipe item?', () => {
+      toast.success("Recipe Item Edited Successfully");
+    });
+  };
+  //alert-toast part ends
 
   return (
     <div className="w-full px-16">
-      <h1 className="text-4xl mb-4">Add Recipe</h1>
+      <h1 className="text-4xl mb-4">Edit Recipe</h1>
       <form onSubmit={handleCreateRecipe} className="w-full">
         <div className="mb-4">
           <label htmlFor="">Title </label>
@@ -114,7 +109,7 @@ const EditRecipe = () => {
             type="submit"
             value={"Edit Recipe"}
             className="w-full btn py-3 px-5 border btn-neutral"
-            
+            onClick={handleEdit}
           />
         </div>
       </form>
