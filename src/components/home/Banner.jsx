@@ -18,7 +18,7 @@ export default function Banner() {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn bg-amber-200">Get Started</button>
         </div>
       </div>
     </div>

@@ -37,7 +37,7 @@ export default function Home() {
       <Banner />
 
       <div className="mx-16">
-        <h1 className="text-4xl my-20 text-center">Our Recipe Categories </h1>
+        <h1 className="text-4xl my-20 text-center font-bold">Our Recipe Categories </h1>
         <div className="grid grid-cols-4 gap-6">
           {categories?.map((category) => (
             <CategoryCard key={category?.id} category={category} />
@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </div>
       <div className="mx-16">
-        <h1 className="text-4xl my-20 text-center">Our Newest Recipes </h1>
+        <h1 className="text-4xl my-20 text-center font-bold">Our Newest Recipes </h1>
         <div className="grid grid-cols-4 gap-6">
           {recipes
             ?.reverse()

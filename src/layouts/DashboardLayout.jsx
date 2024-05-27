@@ -9,7 +9,7 @@ export default function DashbaordLayout() {
     await signOut();
   };
   return (
-    <div className="drawer lg:drawer-open">
+    <div className="drawer lg:drawer-open bg-gradient-to-r from-amber-200 via-lime-100 to-orange-300">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col items-center justify-center">
         <Outlet />
@@ -26,13 +26,13 @@ export default function DashbaordLayout() {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-60 min-h-screen bg-base-200 text-base-content flex flex-col justify-between">
+        <ul className="menu p-4 w-60 min-h-screen bg-slate-500 text-base-content flex flex-col justify-between gap-4">
           {/* Sidebar content here */}
-          <div>
-            <li>
+          <div className="font-bold">
+            <li className=" bg-slate-300 hover:bg-amber-300 rounded-xl shadow-md mt-7 mb-5">
               <Link to={"/dashboard/manage-recipes"}>Mangae All Recipes</Link>
             </li>
-            <li>
+            <li className=" bg-slate-300 hover:bg-amber-300 rounded-xl shadow-md">
               <Link to={"/dashboard/add-recipe"}>Add Recipe</Link>
             </li>
           </div>
@@ -49,4 +49,3 @@ export default function DashbaordLayout() {
     </div>
   );
 }
- 
