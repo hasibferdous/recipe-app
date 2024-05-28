@@ -50,8 +50,8 @@ const AddRecipe = () => {
 
 
   return (
-    <div className="w-full px-16">
-      <h1 className="text-4xl mb-4">Add Recipe</h1>
+    <div className="w-3/4 px-16 mt-24 ml-7 mr-7 shadow-xl rounded-xl bg-amber-200 font-bold">
+      <h1 className="text-4xl mb-4 mt-8">Add Recipe</h1>
       <form onSubmit={handleCreateRecipe} className="w-full">
         <div className="mb-4">
           <label htmlFor="">Id </label>
