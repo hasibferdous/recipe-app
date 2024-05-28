@@ -1,20 +1,12 @@
 {
   "recipes": [
     {
-      "id": "1",
-      "title": "Spaghetti Carbonara 2",
-      "price": "12.99",
-      "description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
-      "image": "https://example.com/images/spaghetti-carbonara.jpg",
-      "category": "Japanese"
-    },
-    {
       "id": "2",
       "title": "Chicken Tikka Masala",
-      "price": "15.99",
+      "price": 15.99,
       "description": "Grilled chunks of chicken enveloped in a creamy, spiced tomato sauce.",
       "image": "https://example.com/images/chicken-tikka-masala.jpg",
-      "category": "Japanese"
+      "category": "Indian"
     },
     {
       "id": "3",
@@ -83,10 +75,10 @@
     {
       "id": "11",
       "title": "Butter Chicken",
-      "price": 16.99,
+      "price": "16.99",
       "description": "Tender chicken cooked in a rich, creamy tomato gravy.",
       "image": "https://example.com/images/butter-chicken.jpg",
-      "category": "Indian"
+      "category": "Japanese"
     },
     {
       "id": "12",
@@ -118,181 +110,6 @@
       "price": "7878",
       "category": "Mexican",
       "descrition": "test"
-    },
-    {
-      "id": "121212",
-      "title": "Test ",
-      "price": "121",
-      "category": "Mexican",
-      "description": "test descittion"
-    },
-    {
-      "id": "54",
-      "title": "soup",
-      "price": "344",
-      "category": "Japanese",
-      "description": "tasty"
-    },
-    {
-      "id": "544",
-      "title": "ergt",
-      "price": "345",
-      "category": "American",
-      "description": "egh"
-    },
-    {
-      "id": "5442",
-      "title": "ergt",
-      "price": "3451",
-      "category": "Chinese",
-      "description": "egh"
-    },
-    {
-      "id": "5442",
-      "title": "ergt",
-      "price": "3451",
-      "category": "Chinese",
-      "description": "egh"
-    },
-    {
-      "id": "5442",
-      "title": "ergt",
-      "price": "3451",
-      "category": "Chinese",
-      "description": "eghM"
-    },
-    {
-      "id": "5442",
-      "title": "ergtCFV",
-      "price": "3451",
-      "category": "Chinese",
-      "description": "eghM"
-    },
-    {
-      "id": "12",
-      "title": "SA",
-      "price": "2345",
-      "category": "French",
-      "description": "SFGDH,KH.LJ"
-    },
-    {
-      "id": "12",
-      "title": "SA",
-      "price": "2345",
-      "category": "French",
-      "description": "SFGDH,KH.LJ"
-    },
-    {
-      "id": "12",
-      "title": "SA",
-      "price": "2345",
-      "category": "French",
-      "description": "SFGDH,KH.LJ"
-    },
-    {
-      "id": "12",
-      "title": "SA",
-      "price": "2345",
-      "category": "French",
-      "description": "SFGDH,KH.LJ"
-    },
-    {
-      "id": "12",
-      "title": "SA",
-      "price": "2345",
-      "category": "French",
-      "description": "SFGDH,KH.LJ"
-    },
-    {
-      "id": "12",
-      "title": "SA",
-      "price": "2345",
-      "category": "French",
-      "description": "SFGDH,KH.LJ"
-    },
-    {
-      "id": "12",
-      "title": "SA",
-      "price": "2345",
-      "category": "French",
-      "description": "SFGDH,KH.LJ"
-    },
-    {
-      "id": "5434678",
-      "title": "fried rice",
-      "price": "12345",
-      "category": "French",
-      "description": "dfg,.m,"
-    },
-    {
-      "id": "5434678",
-      "title": "fried rice",
-      "price": "12345",
-      "category": "French",
-      "description": "dfg,.m,"
-    },
-    {
-      "id": "5434678",
-      "title": "fried rice",
-      "price": "12345",
-      "category": "Middle Eastern",
-      "description": "dfg,.m,"
-    },
-    {
-      "id": "5434678",
-      "title": "fried rice",
-      "price": "12345",
-      "category": "Middle Eastern",
-      "description": "dfg,.m,"
-    },
-    {
-      "id": "5434678",
-      "title": "fried rice",
-      "price": "12345",
-      "category": "Middle Eastern",
-      "description": "dfg,.m,"
-    },
-    {
-      "id": "5434678",
-      "title": "fried rice",
-      "price": "12345",
-      "category": "Chinese",
-      "description": "dfg,.m,"
-    },
-    {
-      "id": "5434678",
-      "title": "fried rice",
-      "price": "12345",
-      "category": "Chinese",
-      "description": "dfg,.m,"
-    },
-    {
-      "id": "5434678",
-      "title": "fried rice",
-      "price": "12345",
-      "category": "Chinese",
-      "description": "dfg,.m,"
-    },
-    {
-      "id": "5434678",
-      "title": "fried rice",
-      "price": "12345",
-      "category": "Chinese",
-      "description": "dfg,.m,"
-    },
-    {
-      "id": "5434678",
-      "title": "fried rice",
-      "price": "12345",
-      "category": "Middle Eastern",
-      "description": "dfg,.m,"
-    },
-    {
-      "id": "5434678",
-      "title": "fried rice",
-      "price": "12345",
-      "category": "Middle Eastern",
-      "description": "dfg,.m,"
     }
   ],
   "categories": [

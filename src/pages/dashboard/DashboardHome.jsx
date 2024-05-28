@@ -24,14 +24,14 @@ export default function DashboardHome() {
         </figure>
         <div className="divider"></div>
         <div className="card-body">
-          <h1 className="card-title font-bold text-2xl">Name: {user?.displayName}</h1>
+          <h1 className="card-title font-bold text-2xl">
+            Name: {user?.displayName}
+          </h1>
           <h2 className="font-bold text-xl">Email: {user?.email}</h2>
           <div className="mt-2">
-            <Link
-              className="gap-1 items-center"
-              onClick={handleLogout}
-            > <CgLogOut></CgLogOut>
-              
+            <Link className="gap-1 items-center" onClick={handleLogout}>
+              {" "}
+              <CgLogOut></CgLogOut>
             </Link>
           </div>
         </div>
